@@ -1,37 +1,26 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  Site built for Mr. Fixit Handy Man Service in CO.
 </h1>
 
-## 🚀 Quick start
+## Quick start -- this site was built with [Gatsby JS](https://www.gatsbyjs.com/)
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1.  **Run site for development.**
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    gatsby develop
     ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
+    
+2.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
 
     Edit `src/pages/index.js` to see your site update in real-time!
+
+3.  **Build the site to deploy.**
+
+    ```shell
+    gatsby build
+    ```
 
 4.  **Learn more**
 
