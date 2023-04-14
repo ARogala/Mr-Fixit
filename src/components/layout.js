@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 
-const Layout = () => {
+const Layout = ({children}) => {
 	return (
 		<div className="container">
 			<nav className="navbar navbar-expand-lg bg-light">
@@ -17,31 +17,32 @@ const Layout = () => {
 			          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
 			        </li>
 			        <li className="nav-item dropdown">
-			          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			          <span className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            Services
-			          </a>
+			          </span>
 			          <ul className="dropdown-menu">
-			            <li><a className="dropdown-item" href="#">Handyman</a></li>
-			            <li><a className="dropdown-item" href="#">Kitchen & Bath</a></li>
-			            <li><a className="dropdown-item" href="#">Tile</a></li>
-			            <li><a className="dropdown-item" href="#">Painting</a></li>
-			            <li><a className="dropdown-item" href="#">Carpentry</a></li>
+			            <li><Link className="dropdown-item" to="/">Handyman</Link></li>
+			            <li><Link className="dropdown-item" to="/">Kitchen & Bath</Link></li>
+			            <li><Link className="dropdown-item" to="/">Tile</Link></li>
+			            <li><Link className="dropdown-item" to="/">Painting</Link></li>
+			            <li><Link className="dropdown-item" to="/">Carpentry</Link></li>
 			          </ul>
 			        </li>
 			        <li className="nav-item">
-			          <a className="nav-link" href="#">Gallery</a>
+			          <Link className="nav-link" to="/">Gallery</Link>
 			        </li>
 			        <li className="nav-item">
-			          <a className="nav-link" href="#">About Me</a>
+			          <Link className="nav-link" to="/about">About Me</Link>
 			        </li>
 			        <li className="nav-item">
-			          <a className="nav-link" href="#">Contact Me</a>
+			          <Link className="nav-link" to="/contact">Contact Me</Link>
 			        </li>
 			        
 			      </ul>
 			    </div>
 			  </div>
 			</nav>
+			{children}
 		</div>
 	)
 }
