@@ -7,8 +7,6 @@ import Button from 'react-bootstrap/Button';
 import Layout from '../components/layout'
 import { Seo } from "../components/seo"
 
-import handyman from "../images/services/handyman.jpg"
-
 const IndexPage = () => {
   return (
     <main>
