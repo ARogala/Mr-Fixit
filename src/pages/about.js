@@ -15,7 +15,7 @@ const AboutPage = () => {
             <p>
               Hi, I'm T.J. Reid founder of Mr. FixIt LLC. I have been working in construction since 2000 
               and have over 20 years of experience! I strive to make my clients happy and would love to 
-              help make you renovation or project a reality.
+              help make your renovation or project a reality.
             </p>
             <p>Mr. FixIt is located in Salida Colorado</p>
             <p><Link to="/contact">Contact me</Link> to for a free estimate and let's talk about how I can help you.</p>
