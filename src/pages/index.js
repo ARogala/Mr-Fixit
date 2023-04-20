@@ -11,10 +11,11 @@ const IndexPage = () => {
   return (
     <main>
       <Layout>
+      <div><StaticImage src="../images/hero-med.jpg" alt="hero image" /></div>
         <h1> Mr. Fix It Services</h1>
         <Row>
           <Col>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="mx-auto mb-4">
               <StaticImage src="../images/services/handyman.jpg" alt="handy man" className="card-img-top" />
               <Card.Body>
                 <Card.Title>General Handyman</Card.Title>
@@ -27,7 +28,7 @@ const IndexPage = () => {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="mx-auto mb-4">
               <StaticImage src="../images/services/carpentry.jpg" alt="carpentry" className="card-img-top" />
               <Card.Body>
                 <Card.Title>Carpentry</Card.Title>
@@ -40,7 +41,7 @@ const IndexPage = () => {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="mx-auto mb-4">
               <StaticImage src="../images/services/kitchen.jpg" alt="kitchen and bath" className="card-img-top" />
               <Card.Body>
                 <Card.Title>Kitchen and Bath</Card.Title>
@@ -52,10 +53,11 @@ const IndexPage = () => {
               </Card.Body>
             </Card>
           </Col>
+
         </Row>
         <Row>
           <Col>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="mx-auto mb-4">
               <StaticImage src="../images/services/tile.jpg" alt="tile work" className="card-img-top" />
               <Card.Body>
                 <Card.Title>Tile</Card.Title>
@@ -68,7 +70,7 @@ const IndexPage = () => {
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem' }} className="mx-auto mb-4">
               <StaticImage src="../images/services/painting.jpg" alt="painting" className="card-img-top" />
               <Card.Body>
                 <Card.Title>Painting</Card.Title>
