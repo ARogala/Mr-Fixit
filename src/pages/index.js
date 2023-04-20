@@ -6,12 +6,13 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Layout from '../components/layout'
 import { Seo } from "../components/seo"
+import Hero from "../components/hero"
 
 const IndexPage = () => {
   return (
     <main>
       <Layout>
-      <div><StaticImage src="../images/hero-med.jpg" alt="hero image" /></div>
+        <div><Hero heroText="Mr. Fix It LLC." secondaryText="Salida Colorado's best handyman service." tertiaryText="Here to make your home repairs and remodeling easy." heroImgRelPath="hero-med.jpg"></Hero></div>
         <h1> Mr. Fix It Services</h1>
         <Row>
           <Col>
