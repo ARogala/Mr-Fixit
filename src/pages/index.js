@@ -23,7 +23,7 @@ const IndexPage = () => {
                 <Card.Text>
                   Drywall<br/>Windows<br/>Flooring
                 </Card.Text>
-                <Link to="/">Click for more details</Link>
+                <Link to="/general-handyman">Click for more details</Link>
               </Card.Body>
             </Card>
           </Col>
