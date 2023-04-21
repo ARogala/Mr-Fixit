@@ -1,9 +1,9 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { heroTextStyle } from "./hero.module.css"
+import { heroTextStyle, fourthTextStyle } from "./hero.module.css"
 
-const Hero = ({heroText,secondaryText,tertiaryText,forthText,heroImgRelPath}) => {
+const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) => {
   
   const data = useStaticQuery(graphql`
     query {
@@ -23,7 +23,7 @@ const Hero = ({heroText,secondaryText,tertiaryText,forthText,heroImgRelPath}) =>
   const image = getImage(selectedImage[0].childImageSharp)
  
   return (
-    <div style={{ display: "grid" }}>
+    <div style={{ display: "grid", height: "85vh" }}>
       {/* You can use a GatsbyImage component if the image is dynamic */}
       <GatsbyImage
         style={{
@@ -53,7 +53,7 @@ const Hero = ({heroText,secondaryText,tertiaryText,forthText,heroImgRelPath}) =>
           <p>{secondaryText}<br/>{tertiaryText}</p>
         </div>
         <div className={heroTextStyle + " text-center"}>
-          <p>{forthText}</p>
+          <p className={fourthTextStyle}>{fourthText}</p>
         </div>
       </div>
     </div>

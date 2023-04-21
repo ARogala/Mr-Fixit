@@ -2,3 +2,8 @@
 	color: white;
 	font-weight: bold;
 }
+
+.fourth-text-style {
+	max-width: 400px;
+  padding: 0px 10px 0px 10px;
+}

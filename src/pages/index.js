@@ -19,7 +19,7 @@ const IndexPage = () => {
               heroText="Mr. Fix It LLC." 
               secondaryText="Salida Colorado's best handyman service." 
               tertiaryText="Here to make your home repairs and remodeling easy." 
-              forthText="Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
+              fourthText="Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
                 and have over 20 years of experience! I strive to make my clients happy and would love to 
                 help make your renovation or project a reality."
               heroImgRelPath="hero-med.jpg"> 
