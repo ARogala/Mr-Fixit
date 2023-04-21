@@ -24,7 +24,6 @@ const GeneralHandyman = () => {
             <ListGroup.Item as="li">Install door locks / repair door locks</ListGroup.Item>
             <ListGroup.Item as="li">Hang doors / repair doors / replace doors</ListGroup.Item>
             <ListGroup.Item as="li">Install windows / repair windows / replace windows</ListGroup.Item>
-            <ListGroup.Item as="li">Hang wallpaper / remove wallpaper</ListGroup.Item>
             <ListGroup.Item as="li">Install blinds / install curtains</ListGroup.Item>
             <ListGroup.Item as="li">Floor Installation or Repair</ListGroup.Item>
             <ListGroup.Item as="li">Hanging doors</ListGroup.Item>
@@ -41,8 +40,6 @@ const GeneralHandyman = () => {
             <ListGroup.Item as="li">Grouting</ListGroup.Item>
             <ListGroup.Item as="li">Tiling</ListGroup.Item>
             <ListGroup.Item as="li">Putting up shelves</ListGroup.Item>
-            <ListGroup.Item as="li">Changing locks</ListGroup.Item>
-            <ListGroup.Item as="li">Window repairs</ListGroup.Item>
           </ListGroup>
         </Col>
         <Col xs={12} md={8} lg={8}>
