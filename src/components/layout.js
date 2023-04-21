@@ -1,15 +1,19 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import 'bootstrap/dist/css/bootstrap.min.css' //Bootstrap  v5.2.3 (https://getbootstrap.com/)
+
+import { footer } from "./layout.module.css"
 
 const Layout = ({children}) => {
 	return (
-		<Container fluid="lg">
-			<Navbar bg="light" expand="lg">
+		<Container fluid="xxl">
+			<Navbar bg="light" expand="lg" sticky="top">
 	      <Container>
 	        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
 	        <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,10 +34,19 @@ const Layout = ({children}) => {
 	      </Container>
 		  </Navbar>
 			{children}
-			<footer>
-				<p>
-					Contact me for a free estimate
-				</p>
+			<footer className={footer+" fixed-bottom"}>
+				<Container fluid="xxl">
+					<Row>
+						<Col className="mb-3 mt-3">
+								Contact me for a free estimate<br/>
+								<a href="tel:+###########">&#9743; #-###-###-####</a><br/>
+								<a href="mailto:youremail@mail.com">Email: youremail@mail.com</a>
+						</Col>
+        		<Col className="mb-3 mt-3">
+        			site map more links
+        		</Col>
+					</Row>
+				</Container>
 			</footer>
 		</Container>
 	)
