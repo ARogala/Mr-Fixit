@@ -12,7 +12,7 @@ import { footer } from "./layout.module.css"
 
 const Layout = ({children}) => {
 	return (
-		<Container fluid="xxl">
+		<Container fluid className="p-0">
 			<Navbar bg="light" expand="lg" sticky="top">
 	      <Container>
 	        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
@@ -35,7 +35,7 @@ const Layout = ({children}) => {
 		  </Navbar>
 			{children}
 			<footer className={footer+" fixed-bottom"}>
-				<Container fluid="xxl">
+				<Container fluid>
 					<Row>
 						<Col className="mb-3 mt-3">
 								Contact me for a free estimate<br/>

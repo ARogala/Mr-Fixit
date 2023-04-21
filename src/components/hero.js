@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { heroTextStyle } from "./hero.module.css"
 
-const Hero = ({heroText,secondaryText,tertiaryText,heroImgRelPath}) => {
+const Hero = ({heroText,secondaryText,tertiaryText,forthText,heroImgRelPath}) => {
   
   const data = useStaticQuery(graphql`
     query {
@@ -48,9 +48,13 @@ const Hero = ({heroText,secondaryText,tertiaryText,heroImgRelPath}) => {
         }}
       >
         {/* Any content here will be centered in the component */}
-        <h1 className={heroTextStyle}>{heroText}</h1>
-        <p className={heroTextStyle + " text-center"}>{secondaryText}<br/>{tertiaryText}</p>
-        <p></p>
+        <div className={heroTextStyle + " text-center"}>
+          <h1>{heroText}</h1>
+          <p>{secondaryText}<br/>{tertiaryText}</p>
+        </div>
+        <div className={heroTextStyle + " text-center"}>
+          <p>{forthText}</p>
+        </div>
       </div>
     </div>
   )
