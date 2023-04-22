@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { heroTextStyle, fourthTextStyle } from "./hero.module.css"
+import Button from 'react-bootstrap/Button'
 
 const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) => {
   
@@ -43,17 +44,22 @@ const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) =
           gridArea: "1/1",
           position: "relative",
           // This centers the other elements inside the hero component
-          placeItems: "center",
+          placeItems: "stretch",
           display: "grid",
+          background: 'black',
+          opacity: '0.6',
         }}
       >
         {/* Any content here will be centered in the component */}
-        <div className={heroTextStyle + " text-center"}>
-          <h1>{heroText}</h1>
-          <p>{secondaryText}<br/>{tertiaryText}</p>
+        <div className={heroTextStyle + " text-center mx-auto"}>
+          <h1 className="mt-3">{heroText}</h1>
+          <p className={fourthTextStyle}>{secondaryText}<br/>{tertiaryText}</p>
         </div>
-        <div className={heroTextStyle + " text-center"}>
+        <div className={heroTextStyle + " text-center mx-auto"}>
           <p className={fourthTextStyle}>{fourthText}</p>
+        </div>
+        <div className="text-center">
+          <Button variant="primary">See What I Can Do For You!</Button>
         </div>
       </div>
     </div>
