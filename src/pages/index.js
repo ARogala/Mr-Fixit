@@ -22,10 +22,10 @@ const IndexPage = () => {
               fourthText="Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
                 and have over 20 years of experience! I strive to make my clients happy and would love to 
                 help make your renovation or project a reality."
-              heroImgRelPath="hero-med.jpg"> 
+              heroImgRelPath="small-test.jpg"> 
             </Hero>
           </div>
-          <h1 className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
+          <h1 id="index-h1" className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
           <Row>
             <Col>
               <Card style={{ width: '18rem' }} className="mx-auto mb-4">

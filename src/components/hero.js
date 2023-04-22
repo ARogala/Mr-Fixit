@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { heroTextStyle, fourthTextStyle } from "./hero.module.css"
 import Button from 'react-bootstrap/Button'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) => {
   
@@ -59,7 +60,7 @@ const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) =
           <p className={fourthTextStyle}>{fourthText}</p>
         </div>
         <div className="text-center">
-          <Button variant="primary">See What I Can Do For You!</Button>
+          <Button variant="primary" onClick={() => scrollTo('#index-h1')}>See What I Can Do For You!</Button>
         </div>
       </div>
     </div>

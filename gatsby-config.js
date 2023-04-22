@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mr. Fix It LLC. | Salida Colorado's best handyman service`,
-    description: `Your go to handyman for all kinds of projects. Services include general handyman, kitchen and bath, tile, panting, and carpentry.`,
+    description: `Your go to handyman for all kinds of projects. Services include general handyman, kitchen and bath, tile, painting, and carpentry.`,
     siteUrl: `https://mrfixitsalida.com/`,
   },
   plugins: [
@@ -18,5 +18,6 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
   ],
 }
