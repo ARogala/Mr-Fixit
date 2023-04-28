@@ -42,9 +42,9 @@ const Layout = ({children}) => {
 								<a href="tel:+###########">&#9743; #-###-###-####</a><br/>
 								<a href="mailto:youremail@mail.com">Email: youremail@mail.com</a>
 						</Col>
-		        		<Col className="mb-3 mt-3">
-		        			SITE UNDER CONSTRUCTION -- MORE DETAILS COMING SOON
-		        		</Col>
+        		<Col className="mb-3 mt-3">
+        			SITE UNDER CONSTRUCTION -- MORE DETAILS COMING SOON
+        		</Col>
 					</Row>
 				</Container>
 			</footer>

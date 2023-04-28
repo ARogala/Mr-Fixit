@@ -14,16 +14,36 @@ const IndexPage = () => {
     <main>
       <Layout>
         <Container fluid className="p-0">
+          <div style={{textAlign: "center"}}>
+            <h1>Mr. Fix It LLC.</h1>
+            <p>Salida Colorado's best handyman service.<br/>Here to make your home repairs and remodeling easy.</p>
+            <p style={{maxWidth: "400px", margin: "auto"}}>
+              Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
+              and have over 20 years of experience! I strive to make my clients happy and would love to 
+              help make your renovation or project a reality.
+            </p>
+          </div>
           <div>
-            <Hero 
+            <StaticImage 
+              src="../images/small-test.jpg" 
+              alt="hero" 
+              objectFit="none"
+              width={480}
+              height={640}
+            />
+            {/*
+              <Hero 
               heroText="Mr. Fix It LLC." 
               secondaryText="Salida Colorado's best handyman service." 
               tertiaryText="Here to make your home repairs and remodeling easy." 
               fourthText="Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
                 and have over 20 years of experience! I strive to make my clients happy and would love to 
                 help make your renovation or project a reality."
-              heroImgRelPath="hero-med.jpg"> 
+              heroImgRelPath="hero-test-med2.jpg"> 
             </Hero>
+
+            */}
+            
           </div>
           <h1 id="index-h1" className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
           <Row>

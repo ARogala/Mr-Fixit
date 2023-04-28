@@ -53,7 +53,6 @@ const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) =
       >
         {/* Any content here will be centered in the component */}
         <div className={heroTextStyle + " text-center mx-auto"}>
-          <h1><strong>SITE UNDER CONSTRUCTION -- MORE DETAILS COMING SOON</strong></h1>
           <h1 className="mt-3">{heroText}</h1>
           <p className={fourthTextStyle + "mx-auto"}>{secondaryText}<br/>{tertiaryText}</p>
 
