@@ -14,24 +14,29 @@ const IndexPage = () => {
     <main>
       <Layout>
         <Container fluid className="p-0">
-          <div style={{textAlign: "center"}}>
-            <h1>Mr. Fix It LLC.</h1>
-            <p>Salida Colorado's best handyman service.<br/>Here to make your home repairs and remodeling easy.</p>
-            <p style={{maxWidth: "400px", margin: "auto"}}>
-              Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
-              and have over 20 years of experience! I strive to make my clients happy and would love to 
-              help make your renovation or project a reality.
-            </p>
+          
+          
+          <div style={{textAlign: "center", position: "relative"}}>
+             <StaticImage 
+              src="../images/hero-med.jpg" 
+              alt="hero" 
+              objectFit="cover"
+              
+              layout="fullWidth"
+            />
+            <div style={{position: "absolute", top: "0", left: "50%", transform: "translateX(-50%)"}}>
+              <h1>Mr. Fix It LLC.</h1>
+              <p>Salida Colorado's best handyman service.<br/>Here to make your home repairs and remodeling easy.</p>
+              <p style={{maxWidth: "400px", margin: "auto"}}>
+                Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
+                and have over 20 years of experience! I strive to make my clients happy and would love to 
+                help make your renovation or project a reality.
+              </p>
+            </div>
           </div>
           <div>
-            <StaticImage 
-              src="../images/small-test.jpg" 
-              alt="hero" 
-              objectFit="none"
-              width={480}
-              height={640}
-            />
-            {/*
+
+            
               <Hero 
               heroText="Mr. Fix It LLC." 
               secondaryText="Salida Colorado's best handyman service." 
@@ -39,10 +44,10 @@ const IndexPage = () => {
               fourthText="Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
                 and have over 20 years of experience! I strive to make my clients happy and would love to 
                 help make your renovation or project a reality."
-              heroImgRelPath="hero-test-med2.jpg"> 
+              heroImgRelPath="hero-med.jpg"> 
             </Hero>
 
-            */}
+            
             
           </div>
           <h1 id="index-h1" className="text-center mb-4 mt-4">Mr. Fix It Services</h1>

@@ -31,9 +31,9 @@ const Hero = ({heroText,secondaryText,tertiaryText,fourthText,heroImgRelPath}) =
         style={{
           gridArea: "1/1",
           // You can set a maximum height for the image, if you wish.
-          // maxHeight: 600,
+          //maxHeight: 600,
         }}
-       
+        
         // This is a presentational image, so the alt should be an empty string
         alt=""
         // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
