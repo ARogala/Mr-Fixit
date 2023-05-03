@@ -1,14 +1,30 @@
+/*
+	color
+	red: #FF5656
+	white: #EDF2F6
+	blue: #6A7EFC
+	black: #494953
+*/
+
 body {
 	overflow-x: hidden;
-	background-color: lightskyblue;
+	background-color: #EDF2F6;
+	color: #EDF2F6;
 }
 body > :first-child {
 	overflow-x: hidden;
 }
 
+a {
+	color: #6A7EFC;
+}
+
+a:hover {
+	color: #FF5656;
+}
+
 .footer {
-	background-color: black;
-	color: white;
+	background-color: #494953;
 	font-weight: bold;
 	text-transform: uppercase;
 }
