@@ -1,30 +1,37 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { Link } from 'gatsby'
+import { StaticImage, GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image"
+import { Link, graphql } from 'gatsby'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Layout from '../components/layout'
 import { Seo } from "../components/seo"
-import Hero from "../components/hero"
+import Button from 'react-bootstrap/Button'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
-const IndexPage = () => {
+import { heroContainer, heroTextContainer, heroBtnContainer, artDirected } from "./index.module.css"
+
+const IndexPage = ({data}) => {
+  console.log(data);
+  const images = withArtDirection(getImage(data.allFile.nodes[15].childImageSharp), [
+    {
+      media: "(max-width: 950px)",
+      image: getImage(data.allFile.nodes[10].childImageSharp),
+    },
+  ])
   return (
     <main>
       <Layout>
         <Container fluid className="p-0">
-          
-          
-          <div style={{textAlign: "center", position: "relative"}}>
-             <StaticImage 
-              src="../images/hero-med.jpg" 
-              alt="hero" 
-              objectFit="cover"
-              
-              layout="fullWidth"
+          <div className={heroContainer}>
+            
+            <GatsbyImage 
+              image={images}
+              alt="" 
+              className={artDirected}
             />
-            <div style={{position: "absolute", top: "0", left: "50%", transform: "translateX(-50%)"}}>
+            <div className={heroTextContainer}>
               <h1>Mr. Fix It LLC.</h1>
               <p>Salida Colorado's best handyman service.<br/>Here to make your home repairs and remodeling easy.</p>
               <p style={{maxWidth: "400px", margin: "auto"}}>
@@ -33,21 +40,9 @@ const IndexPage = () => {
                 help make your renovation or project a reality.
               </p>
             </div>
-          </div>
-          <div>
-
-            
-              <Hero 
-              heroText="Mr. Fix It LLC." 
-              secondaryText="Salida Colorado's best handyman service." 
-              tertiaryText="Here to make your home repairs and remodeling easy." 
-              fourthText="Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
-                and have over 20 years of experience! I strive to make my clients happy and would love to 
-                help make your renovation or project a reality."
-              heroImgRelPath="hero-med.jpg"> 
-            </Hero>
-
-            
+            <div className={heroBtnContainer}>
+              <Button variant="primary" onClick={() => scrollTo('#index-h1')}>See What I Can Do For You!</Button>
+            </div>
             
           </div>
           <h1 id="index-h1" className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
@@ -120,6 +115,19 @@ const IndexPage = () => {
     </main>
   )
 }
+
+export const query = graphql`
+    query {
+      allFile {
+        nodes {
+          childImageSharp {
+            gatsbyImageData( layout: FULL_WIDTH, formats: AUTO)
+          }
+          relativePath
+        }
+      }
+    }
+  `
 
 export default IndexPage
 
