@@ -14,10 +14,10 @@ import { heroContainer, heroTextContainer, heroBtnContainer, artDirected, cardCo
 
 const IndexPage = ({data}) => {
   console.log(data);
-  const images = withArtDirection(getImage(data.allFile.nodes[15].childImageSharp), [
+  const images = withArtDirection(getImage(data.allFile.nodes[7].childImageSharp), [
     {
       media: "(max-width: 950px)",
-      image: getImage(data.allFile.nodes[10].childImageSharp),
+      image: getImage(data.allFile.nodes[9].childImageSharp),
     },
   ])
   return (
@@ -49,11 +49,11 @@ const IndexPage = ({data}) => {
               <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/handyman.jpg" alt="handy man" className="card-img-top" />
                 <Card.Body>
-                  <Card.Title>General Handyman</Card.Title>
+                  <Card.Title className="text-center"><h2>General Handyman</h2></Card.Title>
                   <Card.Text>
                     Drywall<br/>Windows<br/>Flooring
                   </Card.Text>
-                  <Link to="/general-handyman">Click for more details</Link>
+                  <div className="text-center"><Link to="/general-handyman">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -61,11 +61,11 @@ const IndexPage = ({data}) => {
               <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/carpentry.jpg" alt="carpentry" className="card-img-top" />
                 <Card.Body>
-                  <Card.Title>Carpentry</Card.Title>
+                  <Card.Title className="text-center"><h2>Carpentry</h2></Card.Title>
                   <Card.Text>
                     Mantles<br/>Shelving<br/>Molding
                   </Card.Text>
-                  <Link to="/">Click for more details</Link>
+                  <div className="text-center"><Link to="/">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -73,11 +73,11 @@ const IndexPage = ({data}) => {
               <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/kitchen.jpg" alt="kitchen and bath" className="card-img-top" />
                 <Card.Body>
-                  <Card.Title>Kitchen and Bath</Card.Title>
+                  <Card.Title className="text-center"><h2>Kitchen and Bath</h2></Card.Title>
                   <Card.Text>
                      Countertops<br/>Cabinets<br/>Fixtures
                   </Card.Text>
-                  <Link to="/">Click for more details</Link>
+                  <div className="text-center"><Link to="/">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -87,11 +87,11 @@ const IndexPage = ({data}) => {
               <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/tile.jpg" alt="tile work" className="card-img-top" />
                 <Card.Body>
-                  <Card.Title>Tile</Card.Title>
+                  <Card.Title className="text-center"><h2>Tile</h2></Card.Title>
                   <Card.Text>
                      Ceramic<br/>Stone<br/>Porcelain
                   </Card.Text>
-                  <Link to="/">Click for more details</Link>
+                  <div className="text-center"><Link to="/">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -99,23 +99,23 @@ const IndexPage = ({data}) => {
               <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/painting.jpg" alt="painting" className="card-img-top" />
                 <Card.Body>
-                  <Card.Title>Painting</Card.Title>
+                  <Card.Title className="text-center"><h2>Painting</h2></Card.Title>
                   <Card.Text>
                      Decks<br/>Doors<br/>Walls/Ceilings
                   </Card.Text>
-                  <Link to="/">Click for more details</Link>
+                  <div className="text-center"><Link to="/">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card className={cardContainer + " mx-auto mb-4"}>
-                <StaticImage src="../images/services/painting.jpg" alt="painting" className="card-img-top" />
+                <StaticImage src="../images/services/cleanup.jpg" alt="painting" className="card-img-top" />
                 <Card.Body>
-                  <Card.Title>Clean Ups</Card.Title>
+                  <Card.Title className="text-center"><h2>Clean Ups</h2></Card.Title>
                   <Card.Text>
                      Leaves<br/>Shrub/Bush Removal<br/>Construction Sites
                   </Card.Text>
-                  <Link to="/">Click for more details</Link>
+                  <div className="text-center"><Link to="/">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
