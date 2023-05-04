@@ -3,13 +3,14 @@
 	red: #FF5656
 	white: #EDF2F6
 	blue: #6A7EFC
-	black: #494953
+	black-gray: #494953
 */
 
 body {
 	overflow-x: hidden;
 	background-color: #EDF2F6;
 	color: #EDF2F6;
+	margin-bottom: 120px; /*fixed bottom footer will hide content*/;
 }
 body > :first-child {
 	overflow-x: hidden;
