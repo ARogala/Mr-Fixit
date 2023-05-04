@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import 'bootstrap/dist/css/bootstrap.min.css' //Bootstrap  v5.2.3 (https://getbootstrap.com/)
 
+import '../styles/bootstrap-override.css' //Bootstrap  OverRide Styles
+
 import { footer } from "./layout.module.css"
 
 const Layout = ({children}) => {
