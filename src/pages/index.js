@@ -10,7 +10,7 @@ import { Seo } from "../components/seo"
 import Button from 'react-bootstrap/Button'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 
-import { heroContainer, heroTextContainer, heroBtnContainer, artDirected } from "./index.module.css"
+import { heroContainer, heroTextContainer, heroBtnContainer, artDirected, cardContainer } from "./index.module.css"
 
 const IndexPage = ({data}) => {
   console.log(data);
@@ -25,7 +25,6 @@ const IndexPage = ({data}) => {
       <Layout>
         <Container fluid className="p-0">
           <div className={heroContainer}>
-            
             <GatsbyImage 
               image={images}
               alt="" 
@@ -43,12 +42,11 @@ const IndexPage = ({data}) => {
             <div className={heroBtnContainer}>
               <Button variant="primary" onClick={() => scrollTo('#index-h1')}>See What I Can Do For You!</Button>
             </div>
-            
           </div>
           <h1 id="index-h1" className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
           <Row>
             <Col>
-              <Card style={{ width: '18rem' }} className="mx-auto mb-4">
+              <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/handyman.jpg" alt="handy man" className="card-img-top" />
                 <Card.Body>
                   <Card.Title>General Handyman</Card.Title>
@@ -60,7 +58,7 @@ const IndexPage = ({data}) => {
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }} className="mx-auto mb-4">
+              <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/carpentry.jpg" alt="carpentry" className="card-img-top" />
                 <Card.Body>
                   <Card.Title>Carpentry</Card.Title>
@@ -72,7 +70,7 @@ const IndexPage = ({data}) => {
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }} className="mx-auto mb-4">
+              <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/kitchen.jpg" alt="kitchen and bath" className="card-img-top" />
                 <Card.Body>
                   <Card.Title>Kitchen and Bath</Card.Title>
@@ -86,7 +84,7 @@ const IndexPage = ({data}) => {
           </Row>
           <Row>
             <Col>
-              <Card style={{ width: '18rem' }} className="mx-auto mb-4">
+              <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/tile.jpg" alt="tile work" className="card-img-top" />
                 <Card.Body>
                   <Card.Title>Tile</Card.Title>
@@ -98,7 +96,7 @@ const IndexPage = ({data}) => {
               </Card>
             </Col>
             <Col>
-              <Card style={{ width: '18rem' }} className="mx-auto mb-4">
+              <Card className={cardContainer + " mx-auto mb-4"}>
                 <StaticImage src="../images/services/painting.jpg" alt="painting" className="card-img-top" />
                 <Card.Body>
                   <Card.Title>Painting</Card.Title>

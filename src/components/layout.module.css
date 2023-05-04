@@ -3,13 +3,20 @@
 	red: #FF5656
 	white: #EDF2F6
 	blue: #6A7EFC
-	black-gray: #494953
+	gray: #494953
+
+	blue1: #0A2647
+	blue2: #144272
+	blue3: #205295
+	blue4: #2C74B3
 */
 
 body {
 	overflow-x: hidden;
 	background-color: #EDF2F6;
 	color: #EDF2F6;
+	font-weight: bold;
+	font-size: 1.25rem;
 	margin-bottom: 120px; /*fixed bottom footer will hide content*/;
 }
 body > :first-child {
@@ -17,7 +24,9 @@ body > :first-child {
 }
 
 a {
-	color: #6A7EFC;
+	color: #EDF2F6;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -26,6 +35,4 @@ a:hover {
 
 .footer {
 	background-color: #494953;
-	font-weight: bold;
-	text-transform: uppercase;
 }
