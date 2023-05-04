@@ -18,9 +18,16 @@ body {
 	font-weight: bold;
 	font-size: 1.25rem;
 	margin-bottom: 150px; /*fixed bottom footer will hide content*/;
+	margin-top: 56px; /*for fixed navbar*/
 }
 body > :first-child {
 	overflow-x: hidden;
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		margin-top: 62px;
+	}
 }
 
 h1 {

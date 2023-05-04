@@ -15,7 +15,7 @@ import { footer } from "./layout.module.css"
 const Layout = ({children}) => {
 	return (
 		<Container fluid className="p-0">
-			<Navbar bg="light" expand="lg" sticky="top">
+			<Navbar bg="light" expand="lg" fixed="top">
 	      <Container>
 	        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
 	        <Navbar.Toggle aria-controls="basic-navbar-nav" />
