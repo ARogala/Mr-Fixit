@@ -13,7 +13,7 @@
 
 body {
 	overflow-x: hidden;
-	background-color: #EDF2F6;
+	background-color: #0A2647;
 	color: #EDF2F6;
 	font-weight: bold;
 	font-size: 1.25rem;
@@ -25,6 +25,7 @@ body > :first-child {
 
 h1 {
 	font-weight: bold;
+	font-size: 2rem;
 }
 
 a {

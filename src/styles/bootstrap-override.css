@@ -16,7 +16,7 @@
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 1.25rem;
-	
+	  min-width: 300px;
     --bs-btn-color: #EDF2F6;
     --bs-btn-bg: #0A2647;
     --bs-btn-border-color: #0A2647;
