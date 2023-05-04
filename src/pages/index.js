@@ -31,9 +31,9 @@ const IndexPage = ({data}) => {
               className={artDirected}
             />
             <div className={heroTextContainer}>
-              <h1>Mr. Fix It LLC.</h1>
+              <h1 className="mt-2 mb-2">Mr. Fix It LLC.</h1>
               <p>Salida Colorado's best handyman service.<br/>Here to make your home repairs and remodeling easy.</p>
-              <p style={{maxWidth: "400px", margin: "auto"}}>
+              <p>
                 Hi, I'm T.J. Reid founder of Mr. Fix It LLC. I have been working in construction since 2000 
                 and have over 20 years of experience! I strive to make my clients happy and would love to 
                 help make your renovation or project a reality.
@@ -102,6 +102,18 @@ const IndexPage = ({data}) => {
                   <Card.Title>Painting</Card.Title>
                   <Card.Text>
                      Decks<br/>Doors<br/>Walls/Ceilings
+                  </Card.Text>
+                  <Link to="/">Click for more details</Link>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col>
+              <Card className={cardContainer + " mx-auto mb-4"}>
+                <StaticImage src="../images/services/painting.jpg" alt="painting" className="card-img-top" />
+                <Card.Body>
+                  <Card.Title>Clean Ups</Card.Title>
+                  <Card.Text>
+                     Leaves<br/>Shrub/Bush Removal<br/>Construction Sites
                   </Card.Text>
                   <Link to="/">Click for more details</Link>
                 </Card.Body>

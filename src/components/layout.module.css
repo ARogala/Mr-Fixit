@@ -17,10 +17,14 @@ body {
 	color: #EDF2F6;
 	font-weight: bold;
 	font-size: 1.25rem;
-	margin-bottom: 120px; /*fixed bottom footer will hide content*/;
+	margin-bottom: 150px; /*fixed bottom footer will hide content*/;
 }
 body > :first-child {
 	overflow-x: hidden;
+}
+
+h1 {
+	font-weight: bold;
 }
 
 a {

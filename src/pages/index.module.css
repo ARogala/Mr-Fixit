@@ -27,11 +27,23 @@
 	opacity: 0.70;
 }
 
+.hero-text-container p {
+	max-width: 450px;
+	margin: 0px auto 20px auto;
+	padding: 0px 10px;
+}
+
 .hero-btn-container {
 	position: absolute;
-	top: 320px;
+	top: 450px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+@media screen and (min-width: 550px) {
+	.hero-btn-container {
+		top: 370px;
+	}
 }
 
 .hero-btn-container button {
