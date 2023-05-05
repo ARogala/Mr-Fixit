@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
 import { Seo } from "../components/seo"
 import Hero from "../components/hero"
@@ -18,33 +19,21 @@ const GeneralHandyman = () => {
           <Col className="pt-4" xs={12} sm={12} md={6} lg={8} xl={5}>
             <Carousel>
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="https://placehold.co/600x400"
-                  alt="First slide"
-                />
+                <StaticImage src="../images/services/handyman.jpg" alt="handy man" className="d-block w-100" />
                 <Carousel.Caption>
                   <h3>First slide label</h3>
                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="https://placehold.co/600x400"
-                  alt="Second slide"
-                />
+                <StaticImage src="../images/services/handyman.jpg" alt="handy man" className="d-block w-100" />
                 <Carousel.Caption>
                   <h3>Second slide label</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <img
-                  className="d-block w-100"
-                  src="https://placehold.co/600x400"
-                  alt="Third slide"
-                />
+                <StaticImage src="../images/services/handyman.jpg" alt="handy man" className="d-block w-100" />
                 <Carousel.Caption>
                   <h3>Third slide label</h3>
                   <p>

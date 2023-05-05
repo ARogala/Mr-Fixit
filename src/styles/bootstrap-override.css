@@ -1,14 +1,14 @@
 /*
 	color
-	red: #FF5656
-	white: #EDF2F6
-	blue: #6A7EFC
-	gray: #494953
+	red:   #FF5656 rgb(255, 86, 86)
+	white: #EDF2F6 rgb(237, 242, 246)
+	blue:  #6A7EFC rgb(106, 126, 252)
+	gray:  #494953 rgb(73, 73, 83)
 	
-	blue1: #0A2647
-	blue2: #144272
-	blue3: #205295
-	blue4: #2C74B3
+	blue1: #0A2647 rgb(10, 38, 71)
+	blue2: #144272 rgb(20, 66, 114)
+	blue3: #205295 rgb(32, 82, 149)
+	blue4: #2C74B3 rgb(44, 116, 179)
 */
 
 .btn-primary {
@@ -65,4 +65,10 @@
 
 .dropdown-item {
 	font-weight: bold;
+}
+
+.list-group {
+	--bs-list-group-color: #EDF2F6;
+    --bs-list-group-bg: #494953;
+    --bs-list-group-border-color: rgb(237, 242, 246, 0.5);
 }
