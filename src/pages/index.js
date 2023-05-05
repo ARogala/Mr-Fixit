@@ -78,7 +78,7 @@ const IndexPage = ({data}) => {
                   <Card.Text>
                      Countertops<br/>Cabinets<br/>Fixtures
                   </Card.Text>
-                  <div className="text-center"><Link to="/">Click for more details</Link></div>
+                  <div className="text-center"><Link to="/kitchen-bath">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -92,7 +92,7 @@ const IndexPage = ({data}) => {
                   <Card.Text>
                      Ceramic<br/>Stone<br/>Porcelain
                   </Card.Text>
-                  <div className="text-center"><Link to="/">Click for more details</Link></div>
+                  <div className="text-center"><Link to="/tile">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -104,7 +104,7 @@ const IndexPage = ({data}) => {
                   <Card.Text>
                      Decks<br/>Doors<br/>Walls/Ceilings
                   </Card.Text>
-                  <div className="text-center"><Link to="/">Click for more details</Link></div>
+                  <div className="text-center"><Link to="/painting">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>
@@ -116,7 +116,7 @@ const IndexPage = ({data}) => {
                   <Card.Text>
                      Leaves<br/>Shrub/Bush Removal<br/>Construction Sites
                   </Card.Text>
-                  <div className="text-center"><Link to="/">Click for more details</Link></div>
+                  <div className="text-center"><Link to="/clean-ups">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>

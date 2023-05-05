@@ -24,10 +24,10 @@ const Layout = ({children}) => {
 	          	<NavDropdown title="Services" id="basic-nav-dropdown">
 	              <NavDropdown.Item as={Link} to="/general-handyman">Handyman</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/carpentry">Carpentry</NavDropdown.Item>
-	              <NavDropdown.Item as={Link} to="/">Kitchen & Bath</NavDropdown.Item>
-	              <NavDropdown.Item as={Link} to="/">Tile</NavDropdown.Item>
-	              <NavDropdown.Item as={Link} to="/">Painting</NavDropdown.Item>
-	              <NavDropdown.Item as={Link} to="/">Clean Ups</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/kitchen-bath">Kitchen & Bath</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/tile">Tile</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/painting">Painting</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/clean-ups">Clean Ups</NavDropdown.Item>
 	            </NavDropdown>
 	            <Nav.Link as={Link} to="/">Gallery</Nav.Link>
 	            <Nav.Link as={Link} to="/about">About Me</Nav.Link>
