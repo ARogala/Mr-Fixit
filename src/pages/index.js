@@ -66,7 +66,7 @@ const IndexPage = ({data}) => {
                   <Card.Text>
                     Mantles<br/>Shelving<br/>Molding
                   </Card.Text>
-                  <div className="text-center"><Link to="/">Click for more details</Link></div>
+                  <div className="text-center"><Link to="/carpentry">Click for more details</Link></div>
                 </Card.Body>
               </Card>
             </Col>

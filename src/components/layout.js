@@ -22,8 +22,8 @@ const Layout = ({children}) => {
 	        <Navbar.Collapse id="basic-navbar-nav">
 	          <Nav className="me-auto">
 	          	<NavDropdown title="Services" id="basic-nav-dropdown">
-	              <NavDropdown.Item as={Link} to="/">Handyman</NavDropdown.Item>
-	              <NavDropdown.Item as={Link} to="/">Carpentry</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/general-handyman">Handyman</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/carpentry">Carpentry</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/">Kitchen & Bath</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/">Tile</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/">Painting</NavDropdown.Item>
