@@ -45,31 +45,31 @@ const GeneralHandyman = () => {
           </Col>
           <Col className="pt-4" xs={12} sm={12} md={6} lg={4} xl={7}>
             <ListGroup as="ul" numbered variant="flush">
-              <ListGroup.Item as="li">Door hinges</ListGroup.Item>
-              <ListGroup.Item as="li">Build shelving</ListGroup.Item>
-              <ListGroup.Item as="li">Build storage</ListGroup.Item>
-              <ListGroup.Item as="li">Molding installation - base or crown</ListGroup.Item>
+              <ListGroup.Item as="li">Door Hinges</ListGroup.Item>
+              <ListGroup.Item as="li">Build Shelving</ListGroup.Item>
+              <ListGroup.Item as="li">Build Storage</ListGroup.Item>
+              <ListGroup.Item as="li">Molding Installation - Base or Crown</ListGroup.Item>
               <ListGroup.Item as="li">Painting</ListGroup.Item>
-              <ListGroup.Item as="li">Install drywall / repair drywall / texture drywall</ListGroup.Item>
-              <ListGroup.Item as="li">Install door locks / repair door locks</ListGroup.Item>
-              <ListGroup.Item as="li">Hang doors / repair doors / replace doors</ListGroup.Item>
-              <ListGroup.Item as="li">Install windows / repair windows / replace windows</ListGroup.Item>
-              <ListGroup.Item as="li">Install blinds / install curtains</ListGroup.Item>
+              <ListGroup.Item as="li">Install Drywall / Repair Drywall / Texture Drywall</ListGroup.Item>
+              <ListGroup.Item as="li">Install Door Locks / Repair Door Locks</ListGroup.Item>
+              <ListGroup.Item as="li">Hang Doors / Repair Doors / Replace Doors</ListGroup.Item>
+              <ListGroup.Item as="li">Install Windows / Repair Windows / Replace Windows</ListGroup.Item>
+              <ListGroup.Item as="li">Install Blinds / Install Curtains</ListGroup.Item>
               <ListGroup.Item as="li">Floor Installation or Repair</ListGroup.Item>
-              <ListGroup.Item as="li">Hanging doors</ListGroup.Item>
+              <ListGroup.Item as="li">Hanging Doors</ListGroup.Item>
               <ListGroup.Item as="li">General Handyman Repairs</ListGroup.Item>
-              <ListGroup.Item as="li">Fixing leaks</ListGroup.Item>
-              <ListGroup.Item as="li">Plumbing in sinks</ListGroup.Item>
-              <ListGroup.Item as="li">Installing washing machines</ListGroup.Item>
-              <ListGroup.Item as="li">Repairing flush mechanisms on toilets</ListGroup.Item>
-              <ListGroup.Item as="li">Replacing / adding new sockets</ListGroup.Item>
-              <ListGroup.Item as="li">Replacing light switches</ListGroup.Item>
+              <ListGroup.Item as="li">Fixing Leaks</ListGroup.Item>
+              <ListGroup.Item as="li">Plumbing In Sinks</ListGroup.Item>
+              <ListGroup.Item as="li">Installing Washing Machines</ListGroup.Item>
+              <ListGroup.Item as="li">Repairing Flush Mechanisms on Toilets</ListGroup.Item>
+              <ListGroup.Item as="li">Replacing / Adding New Sockets</ListGroup.Item>
+              <ListGroup.Item as="li">Replacing Light Switches</ListGroup.Item>
               <ListGroup.Item as="li">Fitting Lights</ListGroup.Item>
               <ListGroup.Item as="li">Painting</ListGroup.Item>
               <ListGroup.Item as="li">Sealing</ListGroup.Item>
               <ListGroup.Item as="li">Grouting</ListGroup.Item>
               <ListGroup.Item as="li">Tiling</ListGroup.Item>
-              <ListGroup.Item as="li">Putting up shelves</ListGroup.Item>
+              <ListGroup.Item as="li">Putting Up Shelves</ListGroup.Item>
             </ListGroup>
           </Col>
         </Row>

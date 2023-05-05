@@ -12,28 +12,28 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const GeneralHandyman = () => {
   return (
     <Layout>
-      <div><Hero heroText="Mr. Fix It LLC." secondaryText="Carpentry Service's" heroImgRelPath="services/carpentry.jpg"></Hero></div>
-      <h1 className="text-center mb-4 mt-4">Carpentry Services I Offer</h1>
+      <div><Hero heroText="Mr. Fix It LLC." secondaryText="Kitchen & Bath Service's" heroImgRelPath="services/carpentry.jpg"></Hero></div>
+      <h1 className="text-center mb-4 mt-4">Kitchen & Bath Services I Offer</h1>
       <Container>
         <Row>
           <Col className="pt-4" xs={12} sm={12} md={6} lg={8} xl={5}>
             <Carousel>
               <Carousel.Item>
-                <StaticImage src="../images/services/carpentry.jpg" alt="handy man" className="d-block w-100" />
+                <StaticImage src="../images/services/kitchen.jpg" alt="handy man" className="d-block w-100" />
                 <Carousel.Caption>
                   <h3>First slide label</h3>
                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <StaticImage src="../images/services/carpentry.jpg" alt="handy man" className="d-block w-100" />
+                <StaticImage src="../images/services/kitchen.jpg" alt="handy man" className="d-block w-100" />
                 <Carousel.Caption>
                   <h3>Second slide label</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                <StaticImage src="../images/services/carpentry.jpg" alt="handy man" className="d-block w-100" />
+                <StaticImage src="../images/services/kitchen.jpg" alt="handy man" className="d-block w-100" />
                 <Carousel.Caption>
                   <h3>Third slide label</h3>
                   <p>
@@ -45,17 +45,25 @@ const GeneralHandyman = () => {
           </Col>
           <Col className="pt-4" xs={12} sm={12} md={6} lg={4} xl={7}>
             <ListGroup as="ul" numbered variant="flush">
-              <ListGroup.Item as="li">Bookcases Mantles and Shelving</ListGroup.Item>
-              <ListGroup.Item as="li">Cabinet Installations</ListGroup.Item>
-              <ListGroup.Item as="li">Cabinets</ListGroup.Item>
-              <ListGroup.Item as="li">Countertops</ListGroup.Item>
-              <ListGroup.Item as="li">Crown Molding</ListGroup.Item>
-              <ListGroup.Item as="li">Furniture Assembly</ListGroup.Item>
-              <ListGroup.Item as="li">Wood Floor/Tile Installation</ListGroup.Item>
-              <ListGroup.Item as="li">Fence Repair/Installation</ListGroup.Item>
-              <ListGroup.Item as="li">Sideboards & Moldings</ListGroup.Item>
-              <ListGroup.Item as="li">Front Door Installation</ListGroup.Item>
-              <ListGroup.Item as="li">Staircases</ListGroup.Item>
+              <ListGroup.Item as="li">Counter Top Installation</ListGroup.Item>
+              <ListGroup.Item as="li">Ice / Water to Refrigerator</ListGroup.Item>
+              <ListGroup.Item as="li">New Disposals Installed</ListGroup.Item>
+              <ListGroup.Item as="li">Cabinet Doors</ListGroup.Item>
+              <ListGroup.Item as="li">New Appliances Installed</ListGroup.Item>
+              <ListGroup.Item as="li">New Cabinet Hardware</ListGroup.Item>
+              <ListGroup.Item as="li">Cabinets Upgrade</ListGroup.Item>
+              <ListGroup.Item as="li">Custom Tile Work</ListGroup.Item>
+              <ListGroup.Item as="li">Sink Replacement/Installation</ListGroup.Item>
+              <ListGroup.Item as="li">Shower Door Installation</ListGroup.Item>
+              <ListGroup.Item as="li">Cabinet Refacing</ListGroup.Item>
+              <ListGroup.Item as="li">New Cabinet Installation</ListGroup.Item>
+              <ListGroup.Item as="li">Grout & Sealing</ListGroup.Item>
+              <ListGroup.Item as="li">Caulking</ListGroup.Item>
+              <ListGroup.Item as="li">Install Fixtures / Replace Fixtures</ListGroup.Item>
+              <ListGroup.Item as="li">Install Floor Tile / Repairing Floor Tile</ListGroup.Item>
+              <ListGroup.Item as="li">Install Wall Tile / Repairing Wall Tile</ListGroup.Item>
+              <ListGroup.Item as="li">Install Shower Doors</ListGroup.Item>
+              <ListGroup.Item as="li">Hang Towel Racks</ListGroup.Item>
             </ListGroup>
           </Col>
         </Row>
