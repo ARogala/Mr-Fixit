@@ -49,6 +49,8 @@ const GeneralHandyman = () => {
               <ListGroup.Item as="li">Doors</ListGroup.Item>
               <ListGroup.Item as="li">Walls</ListGroup.Item>
               <ListGroup.Item as="li">Ceilings</ListGroup.Item>
+              <ListGroup.Item as="li">Interior</ListGroup.Item>
+              <ListGroup.Item as="li">Exterior</ListGroup.Item>
             </ListGroup>
           </Col>
         </Row>
