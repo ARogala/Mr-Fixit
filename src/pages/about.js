@@ -23,7 +23,7 @@ const AboutPage = () => {
               and have over 20 years of experience! I strive to make my clients happy and would love to 
               help make your renovation or project a reality.
             </p>
-            <p>If you would like to make you project a reality please don't hesitate to contact me for a free estimate and let's talk about how I can help you.</p>
+            <p>If you have a project big or small please don't hesitate to contact me for a free estimate and let's talk about how I can help you.</p>
             <p>I usually return calls and answer emails the same day but fixing things keeps me really busy so it may take a day or two. Thank you for you patience!</p>
             <h2 className="text-center">Contact Information</h2>
             <p>
