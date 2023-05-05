@@ -10,12 +10,12 @@ import 'bootstrap/dist/css/bootstrap.min.css' //Bootstrap  v5.2.3 (https://getbo
 
 import '../styles/bootstrap-override.css' //Bootstrap  OverRide Styles
 
-import { footer } from "./layout.module.css"
+import { footer, mainContainer } from "./layout.module.css"
 
 const Layout = ({children}) => {
 	return (
-		<Container fluid className="p-0">
-			<Navbar bg="light" expand="lg" fixed="top">
+		<Container fluid className={mainContainer}>
+			<Navbar bg="dark" variant="dark" expand="lg" fixed="top">
 	      <Container>
 	        <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
 	        <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,10 +23,11 @@ const Layout = ({children}) => {
 	          <Nav className="me-auto">
 	          	<NavDropdown title="Services" id="basic-nav-dropdown">
 	              <NavDropdown.Item as={Link} to="/">Handyman</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/">Carpentry</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/">Kitchen & Bath</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/">Tile</NavDropdown.Item>
 	              <NavDropdown.Item as={Link} to="/">Painting</NavDropdown.Item>
-	              <NavDropdown.Item as={Link} to="/">Carpentry</NavDropdown.Item>
+	              <NavDropdown.Item as={Link} to="/">Clean Ups</NavDropdown.Item>
 	            </NavDropdown>
 	            <Nav.Link as={Link} to="/">Gallery</Nav.Link>
 	            <Nav.Link as={Link} to="/about">About Me</Nav.Link>

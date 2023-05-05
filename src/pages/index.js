@@ -40,10 +40,11 @@ const IndexPage = ({data}) => {
               </p>
             </div>
             <div className={heroBtnContainer}>
-              <Button variant="primary" onClick={() => scrollTo('#index-h1')}>See What I Can Do For You!</Button>
+              <Button variant="primary" onClick={() => scrollTo('#scroll-to')}>See What I Can Do For You!</Button>
             </div>
           </div>
-          <h1 id="index-h1" className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
+          <div id="scroll-to" style={{height: "60px"}}></div>
+          <h1 className="text-center mb-4 mt-4">Mr. Fix It Services</h1>
           <Row>
             <Col>
               <Card className={cardContainer + " mx-auto mb-4"}>

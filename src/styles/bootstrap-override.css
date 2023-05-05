@@ -35,3 +35,34 @@
     --bs-btn-disabled-bg: #0d6efd;
     --bs-btn-disabled-border-color: #0d6efd;
 }
+
+/*nav bar overrides*/
+.bg-dark {
+	background-color: #494953 !important;
+}
+
+.navbar-dark {
+    --bs-navbar-color: #EDF2F6;
+    --bs-navbar-hover-color: #FF5656;
+
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+
+    --bs-navbar-active-color: #EDF2F6;;
+    --bs-navbar-brand-color: #EDF2F6;;
+    --bs-navbar-brand-hover-color: #FF5656;
+    --bs-navbar-toggler-border-color: #EDF2F6;
+}
+
+.dropdown-menu {
+	--bs-dropdown-bg: #494953;
+	--bs-dropdown-color: #EDF2F6;
+	--bs-dropdown-link-hover-color: #FF5656; 
+  --bs-dropdown-link-hover-bg: #494953;
+  --bs-dropdown-link-active-color: #FF5656;;
+  --bs-dropdown-link-active-bg: #494953;
+	font-size: 1.25rem;
+}
+
+.dropdown-item {
+	font-weight: bold;
+}

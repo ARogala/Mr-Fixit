@@ -18,16 +18,9 @@ body {
 	font-weight: bold;
 	font-size: 1.25rem;
 	margin-bottom: 150px; /*fixed bottom footer will hide content*/;
-	margin-top: 56px; /*for fixed navbar*/
 }
 body > :first-child {
 	overflow-x: hidden;
-}
-
-@media screen and (min-width: 992px) {
-	body {
-		margin-top: 62px;
-	}
 }
 
 h1 {
@@ -41,8 +34,34 @@ a {
   text-transform: uppercase;
 }
 
+a:link{
+	color:#EDF2F6;;
+}
+
+a:visited {
+	color: #EDF2F6;
+}
+
 a:hover {
 	color: #FF5656;
+}
+
+a:active {
+	color: #FF5656;
+}
+
+a:focus {
+	color: #FF5656;
+}
+
+.main-container {
+	padding: 56px 0px; /*for fixed navbar*/
+}
+
+@media screen and (min-width: 992px) {
+	.main-container {
+		padding: 62px 0px; /*for fixed navbar*/
+	}
 }
 
 .footer {
