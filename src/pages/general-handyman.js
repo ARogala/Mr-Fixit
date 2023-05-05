@@ -10,8 +10,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const GeneralHandyman = () => {
   return (
     <Layout>
-      <div><Hero heroText="Mr. Fix It LLC." secondaryText="Salida Colorado's best handyman service." tertiaryText="General Handyman Service" heroImgRelPath="services/handyman.jpg"></Hero></div>
-      <h1 className="text-center mb-4 mt-4">Handyman Services I offer</h1>
+      <div><Hero heroText="Mr. Fix It LLC." secondaryText="General Handyman Service's" heroImgRelPath="services/handyman.jpg"></Hero></div>
+      <h1 className="text-center mb-4 mt-4">Handyman Services I Offer</h1>
       <Row>
         <Col xs={12} md={4} lg={4}>
           <ListGroup as="ul" numbered variant="flush">
