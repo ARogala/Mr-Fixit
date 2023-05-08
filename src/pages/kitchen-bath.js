@@ -12,7 +12,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const GeneralHandyman = () => {
   return (
     <Layout>
-      <div><Hero heroText="Mr. Fix It LLC." secondaryText="Kitchen & Bath Services" heroImgRelPath="services/carpentry.jpg"></Hero></div>
+      <div><Hero heroText="Mr. Fix It LLC." secondaryText="Kitchen & Bath Services" heroImgRelPath="services/kitchen.jpg"></Hero></div>
       <h1 className="text-center mb-4 mt-4">Kitchen & Bath Services I Offer</h1>
       <Container>
         <Row>
