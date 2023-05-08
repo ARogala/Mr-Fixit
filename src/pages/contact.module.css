@@ -1,0 +1,18 @@
+/*
+	color
+	red: #FF5656
+	white: #EDF2F6
+	blue: #6A7EFC
+	gray: #494953
+
+	blue1: #0A2647
+	blue2: #144272
+	blue3: #205295
+	blue4: #2C74B3
+*/
+
+.about-img {
+	max-width: 500px;
+	border-radius: 300px;
+	margin-bottom: 20px;
+}

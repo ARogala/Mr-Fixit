@@ -30,7 +30,7 @@ const Layout = ({children}) => {
 	              <NavDropdown.Item as={Link} to="/clean-ups">Clean Ups</NavDropdown.Item>
 	            </NavDropdown>
 	            <Nav.Link as={Link} to="/">Gallery</Nav.Link>
-	            <Nav.Link as={Link} to="/about">About Me</Nav.Link>
+	            {/*<Nav.Link as={Link} to="/about">About Me</Nav.Link>*/}
 	            <Nav.Link as={Link} to="/contact">Contact Me</Nav.Link>
 	          </Nav>
 	        </Navbar.Collapse>

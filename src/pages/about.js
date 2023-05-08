@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
@@ -13,7 +12,6 @@ const AboutPage = () => {
   return (
     <Layout>
       <Container>
-       
         <Row>
           <Col xs={12} md={6} lg={6} className="mt-5"><StaticImage src="../images/services/handyman.jpg" alt="handy man" className={aboutImg} /></Col>
           <Col xs={12} md={6} lg={6} className="mt-5">
@@ -26,6 +24,7 @@ const AboutPage = () => {
             <p>If you have a project big or small please don't hesitate to contact me for a free estimate and let's talk about how I can help you.</p>
             <p>I usually return calls and answer emails the same day but fixing things keeps me really busy so it may take a day or two. Thank you for you patience!</p>
             <h2 className="text-center">Contact Information</h2>
+            <h4 className="text-center">Call or Email For a Free Estimate</h4>
             <p>
               <a href="tel:+###########">&#9743; #-###-###-####</a><br/>
               <a href="mailto:youremail@mail.com">Email: youremail@mail.com</a><br/>
