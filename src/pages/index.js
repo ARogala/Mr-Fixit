@@ -13,11 +13,13 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 import { heroContainer, heroTextContainer, heroBtnContainer, artDirected, cardContainer } from "./index.module.css"
 
 const IndexPage = ({data}) => {
-  console.log(data);
-  const images = withArtDirection(getImage(data.allFile.nodes[7].childImageSharp), [
+  const imageNodes = data.allFile.nodes;
+  const heroImgDesktop = imageNodes.filter(img => img.relativePath === "hero-lg.jpg")
+  const heroImgMobile = imageNodes.filter(img => img.relativePath === "hero-mobile-lg1.jpg")
+  const images = withArtDirection(getImage(heroImgDesktop[0].childImageSharp), [
     {
       media: "(max-width: 950px)",
-      image: getImage(data.allFile.nodes[9].childImageSharp),
+      image: getImage(heroImgMobile[0].childImageSharp),
     },
   ])
   return (
