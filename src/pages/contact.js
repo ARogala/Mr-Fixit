@@ -15,14 +15,14 @@ const ContactPage = () => {
         <Row>
           <Col xs={12} md={6} lg={6} className="mt-5"><StaticImage src="../images/services/handyman.jpg" alt="handy man" className={aboutImg} /></Col>
           <Col xs={12} md={6} lg={6} className="mt-5">
-            <h2 className="text-center">Contact Information</h2>
+            <h1 className="text-center">Contact Information</h1>
             <h4 className="text-center">Call or Email For a Free Estimate</h4>
             <p>
               <a href="tel:+###########">&#9743; #-###-###-####</a><br/>
               <a href="mailto:youremail@mail.com">Email: youremail@mail.com</a><br/>
               Mr. Fix It is located in Salida Colorado and services the surrounding area.
             </p>
-            <h2 className="text-center">Hours</h2>
+            <h1 className="text-center">Hours</h1>
             <p>Monday - Saturday 7am - 6pm</p>
             <p>Closed on Sunday</p>
             <h1 className="text-center">About Me</h1>
