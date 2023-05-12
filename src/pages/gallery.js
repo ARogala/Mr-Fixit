@@ -1,5 +1,5 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -8,66 +8,22 @@ import Layout from '../components/layout'
 import { Seo } from "../components/seo"
 
 const GalleryPage = ({data}) => {
-	console.log(data)
+	function buildImages() {
+		const images = data.allFile.nodes;
+		const imgDOM = images.map((img,index)=>{
+			const image = getImage(img.childImageSharp)
+			return(
+				<Col xs={12} md={6} lg={4} className="pb-4" key={index}>
+					<GatsbyImage image={image} alt=""/>
+				</Col>
+			);
+		});
+		return imgDOM;
+	}
 	return (
 		<Layout>
 			<Container fluid className="pt-5">
-				<Row>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-					<Col>
-						<StaticImage src="../images/services/handyman.jpg" alt="handy man" />
-					</Col>
-				</Row>
-
+				<Row>{buildImages()}</Row>
 			</Container>
 		</Layout>
 	)
