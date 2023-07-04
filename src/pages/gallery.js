@@ -7,13 +7,15 @@ import Col from 'react-bootstrap/Col'
 import Layout from '../components/layout'
 import { Seo } from "../components/seo"
 
+import { galleryMaxWidth } from "./gallery.module.css"
+
 const GalleryPage = ({data}) => {
 	function buildImages() {
 		const images = data.allFile.nodes;
 		const imgDOM = images.map((img,index)=>{
 			const image = getImage(img.childImageSharp)
 			return(
-				<Col xs={12} md={6} lg={4} className="pb-4" key={index}>
+				<Col xs={12} md={6} lg={6} className="pb-4" key={index}>
 					<GatsbyImage image={image} alt=""/>
 				</Col>
 			);
@@ -22,7 +24,7 @@ const GalleryPage = ({data}) => {
 	}
 	return (
 		<Layout>
-			<Container fluid className="pt-5">
+			<Container fluid className={galleryMaxWidth + " pt-5"}>
 				<Row>{buildImages()}</Row>
 			</Container>
 		</Layout>
@@ -31,7 +33,7 @@ const GalleryPage = ({data}) => {
 
 export const query = graphql`
     query {
-      allFile(filter: {relativeDirectory: {eq: "gallery"}}) {
+      allFile(filter: {relativeDirectory: {eq: "gallery"}}, sort: {name: ASC}) {
         nodes {
           childImageSharp {
             gatsbyImageData( layout: FULL_WIDTH, formats: AUTO)

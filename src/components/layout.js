@@ -42,8 +42,8 @@ const Layout = ({children}) => {
 					<Row>
 						<Col className="mb-3 mt-3">
 								Contact Me For a Free Estimate!<br/>
-								<a href="tel:+###########">&#9743; #-###-###-####</a><br/>
-								<a href="mailto:youremail@mail.com">Email: youremail@mail.com</a>
+								<a href="tel:+7192391995">&#9743; 719-239-1995</a><br/>
+								<a href="mailto:mr.fixitsalida@gmail.com">Email: mr.fixitsalida@gmail.com</a>
 						</Col>
 					</Row>
 				</Container>
