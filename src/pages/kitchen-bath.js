@@ -12,10 +12,18 @@ import ListGroup from 'react-bootstrap/ListGroup';
 const GeneralHandyman = () => {
   return (
     <Layout>
+      <style jsx>
+        {`
+          .container-main {
+            max-width: 700px;
+          }
+        `}
+      </style>
       <div><Hero heroText="Mr. Fix It LLC." secondaryText="Kitchen & Bath Services" heroImgRelPath="services/kitchen.jpg"></Hero></div>
       <h1 className="text-center mb-4 mt-4">Kitchen & Bath Services I Offer</h1>
-      <Container>
+      <Container className="container-main"> 
         <Row>
+          {/*
           <Col className="pt-4" xs={12} sm={12} md={6} lg={8} xl={5}>
             <Carousel>
               <Carousel.Item>
@@ -43,7 +51,9 @@ const GeneralHandyman = () => {
               </Carousel.Item>
             </Carousel>
           </Col>
-          <Col className="pt-4" xs={12} sm={12} md={6} lg={4} xl={7}>
+          */}
+          {/*xs={12} sm={12} md={6} lg={4} xl={7}*/}
+          <Col className="pt-4" xs={12} sm={12} md={12} lg={12} xl={12}>
             <ListGroup as="ul" numbered variant="flush">
               <ListGroup.Item as="li">Counter Top Installation</ListGroup.Item>
               <ListGroup.Item as="li">Ice / Water to Refrigerator</ListGroup.Item>
